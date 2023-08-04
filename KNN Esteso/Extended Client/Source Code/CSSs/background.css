@@ -1,0 +1,4 @@
+.bodybg{
+ -fx-background-image: url('/images/gradientBackground.png');
+ -fx-background-size: 100% 100%;
+}

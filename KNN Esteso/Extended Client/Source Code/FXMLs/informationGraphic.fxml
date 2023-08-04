@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" styleClass="bodybg" stylesheets="@../CSSs/background.css" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.graphicController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DEEPSKYBLUE" height="200.0" layoutX="159.0" layoutY="562.0" rotate="18.4" stroke="TRANSPARENT" strokeType="INSIDE" width="286.0" AnchorPane.bottomAnchor="-162.0" />
+      <AnchorPane prefHeight="600.0" prefWidth="219.0" style="-fx-background-color: linear-gradient(to bottom, #00bfff, #0070ff);" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <effect>
+            <DropShadow height="0.0" radius="11.7675" width="49.07" />
+         </effect>
+         <children>
+            <Button fx:id="homeButton" mnemonicParsing="false" onAction="#clickedHomeButton" prefHeight="70.0" prefWidth="219.0" stylesheets="@../CSSs/button.css" textFill="WHITE">
+               <font>
+                  <Font name="Montserrat Bold" size="18.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/home.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="infoButton" layoutY="530.0" mnemonicParsing="false" onAction="#clickedInfoButton" prefHeight="70.0" prefWidth="219.0" style="-fx-background-color: #00bfff;" stylesheets="@../CSSs/button.css" textFill="WHITE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0">
+               <font>
+                  <Font name="Montserrat Bold" size="17.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="30.0" fitWidth="30.0">
+                     <image>
+                        <Image url="@../images/info.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <VBox alignment="CENTER" layoutY="186.0" prefHeight="229.0" prefWidth="219.0" AnchorPane.bottomAnchor="185.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="186.0">
+               <children>
+                  <Button fx:id="textFileButton" mnemonicParsing="false" onAction="#clickedTextFileButton" prefHeight="70.0" prefWidth="219.0" stylesheets="@../CSSs/button.css" text="File di testo" textFill="WHITE">
+                     <font>
+                        <Font name="Montserrat Bold" size="18.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="binaryFileButton" mnemonicParsing="false" onAction="#clickedBinaryFileButton" prefHeight="70.0" prefWidth="219.0" stylesheets="@../CSSs/button.css" text="File binario" textFill="WHITE">
+                     <font>
+                        <Font name="Montserrat Bold" size="18.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="databaseButton" mnemonicParsing="false" onAction="#clickedDatabaseButton" prefHeight="70.0" prefWidth="219.0" stylesheets="@../CSSs/button.css" text="Database MySQL" textFill="WHITE">
+                     <font>
+                        <Font name="Montserrat Bold" size="17.0" />
+                     </font>
+                  </Button>
+               </children>
+            </VBox>
+         </children>
+      </AnchorPane>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="187.0" layoutX="390.0" layoutY="539.0" rotate="-13.6" stroke="TRANSPARENT" strokeType="INSIDE" width="542.0" AnchorPane.bottomAnchor="-126.0" AnchorPane.rightAnchor="-32.0">
+         <effect>
+            <DropShadow height="42.06" radius="20.53" width="42.06" />
+         </effect>
+      </Rectangle>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DEEPSKYBLUE" height="486.0" layoutX="867.0" layoutY="166.0" rotate="8.1" stroke="TRANSPARENT" strokeType="INSIDE" width="200.0" AnchorPane.bottomAnchor="-52.0" AnchorPane.rightAnchor="-167.0">
+         <effect>
+            <DropShadow height="60.77" radius="26.375" spread="0.06" width="46.73" />
+         </effect>
+      </Rectangle>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="302.0" layoutY="90.0" prefHeight="75.0" prefWidth="523.0" text="nell'applicazione KNN" textAlignment="CENTER" textFill="WHITE" AnchorPane.leftAnchor="302.0" AnchorPane.rightAnchor="74.79999999999995" AnchorPane.topAnchor="90.0">
+         <font>
+            <Font name="Montserrat SemiBold" size="45.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Label>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="302.0" layoutY="14.0" prefHeight="94.0" prefWidth="374.0" text="Benvenuto" textAlignment="CENTER" textFill="WHITE" AnchorPane.leftAnchor="302.0" AnchorPane.rightAnchor="75.0" AnchorPane.topAnchor="14.0">
+         <font>
+            <Font name="Montserrat SemiBold" size="61.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Label>
+      <Label layoutX="249.0" layoutY="187.0" prefHeight="34.0" prefWidth="175.0" text="Che cos'è il KNN?" textFill="WHITE" AnchorPane.bottomAnchor="378.6" AnchorPane.leftAnchor="249.0" AnchorPane.rightAnchor="475.8" AnchorPane.topAnchor="187.0">
+         <font>
+            <Font name="Montserrat Bold" size="17.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Label>
+      <Label layoutX="271.0" layoutY="221.0" prefHeight="34.0" prefWidth="606.0" text="E' un algoritmo utilizzato nel riconoscimento di pattern per la classificazione di" textFill="WHITE" AnchorPane.bottomAnchor="344.6" AnchorPane.leftAnchor="271.0" AnchorPane.rightAnchor="22.600000000000023" AnchorPane.topAnchor="221.0">
+         <font>
+            <Font name="Montserrat Regular" size="15.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Label>
+      <Label layoutX="271.0" layoutY="249.0" prefHeight="34.0" prefWidth="598.0" text="oggetti basandosi sulle caratteristiche degli oggetti vicini a quello considerato." textFill="WHITE" AnchorPane.bottomAnchor="316.6" AnchorPane.leftAnchor="271.0" AnchorPane.rightAnchor="22.600000000000023" AnchorPane.topAnchor="249.0">
+         <font>
+            <Font name="Montserrat Regular" size="15.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Label>
+      <Label layoutX="271.0" layoutY="277.0" prefHeight="34.0" prefWidth="582.0" text="Inoltre, in questo caso particolare, si tratta di KNN di regressione numerica." textFill="WHITE" AnchorPane.bottomAnchor="288.6" AnchorPane.leftAnchor="271.0" AnchorPane.rightAnchor="46.60000000000002" AnchorPane.topAnchor="277.0">
+         <font>
+            <Font name="Montserrat Regular" size="15.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Label>
+      <Label layoutX="249.0" layoutY="324.0" prefHeight="34.0" prefWidth="531.0" text="Quindi cosa fa questo programma?" textFill="WHITE" AnchorPane.bottomAnchor="241.60000000000002" AnchorPane.leftAnchor="249.0" AnchorPane.rightAnchor="119.79999999999995" AnchorPane.topAnchor="324.0">
+         <font>
+            <Font name="Montserrat Bold" size="17.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Label>
+      <Label layoutX="271.0" layoutY="358.0" prefHeight="34.0" prefWidth="606.0" text="In sostanza, ti permette di adoperare l'algoritmo KNN di regressione numerica" textFill="WHITE" AnchorPane.bottomAnchor="207.60000000000002" AnchorPane.leftAnchor="271.0" AnchorPane.rightAnchor="22.600000000000023" AnchorPane.topAnchor="358.0">
+         <font>
+            <Font name="Montserrat Regular" size="15.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Label>
+      <Label layoutX="271.0" layoutY="384.0" prefHeight="34.0" prefWidth="531.0" text="con tre modalità di caricamento del database:" textFill="WHITE" AnchorPane.bottomAnchor="181.60000000000002" AnchorPane.leftAnchor="271.0" AnchorPane.rightAnchor="97.79999999999995" AnchorPane.topAnchor="384.0">
+         <font>
+            <Font name="Montserrat Regular" size="15.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Label>
+      <Label layoutX="281.0" layoutY="418.0" prefHeight="34.0" prefWidth="531.0" text="- Caricamento da file di testo, file come &quot;.txt&quot; &quot;.dmp&quot;" textFill="WHITE" AnchorPane.bottomAnchor="147.60000000000002" AnchorPane.leftAnchor="281.0" AnchorPane.rightAnchor="87.79999999999995" AnchorPane.topAnchor="418.0">
+         <font>
+            <Font name="Montserrat Regular" size="15.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Label>
+      <Label layoutX="283.0" layoutY="448.0" prefHeight="34.0" prefWidth="582.0" text="- Caricamento tramite file binario, che a sua volta viene generato da un file " textFill="WHITE" AnchorPane.bottomAnchor="117.60000000000002" AnchorPane.leftAnchor="283.0" AnchorPane.rightAnchor="34.60000000000002" AnchorPane.topAnchor="448.0">
+         <font>
+            <Font name="Montserrat Regular" size="15.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Label>
+      <Label layoutX="297.0" layoutY="476.0" prefHeight="34.0" prefWidth="531.0" text="di testo oppure da un database MySQL" textFill="WHITE" AnchorPane.bottomAnchor="89.60000000000002" AnchorPane.leftAnchor="297.0" AnchorPane.rightAnchor="71.79999999999995" AnchorPane.topAnchor="476.0">
+         <font>
+            <Font name="Montserrat Regular" size="15.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Label>
+      <Label layoutX="281.0" layoutY="506.0" prefHeight="34.0" prefWidth="531.0" text="- Caricamento mediante database MySQL" textFill="WHITE" AnchorPane.bottomAnchor="59.60000000000002" AnchorPane.leftAnchor="281.0" AnchorPane.rightAnchor="87.79999999999995" AnchorPane.topAnchor="506.0">
+         <font>
+            <Font name="Montserrat Regular" size="15.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Label>
+   </children>
+</AnchorPane>

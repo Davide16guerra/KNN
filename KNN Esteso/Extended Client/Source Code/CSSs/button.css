@@ -1,0 +1,17 @@
+.button
+{
+	-fx-background-color : transparent;
+	-fx-background-radius : 0 0 0 0
+}
+
+.button: hover
+{
+	-fx-background-color : #00BFFF ;
+	-fx-background-radius : 0 0 0 0
+}
+
+.button: pressed
+{
+	-fx-background-color : #87CEFA ;
+	-fx-background-radius : 0 0 0 0
+}

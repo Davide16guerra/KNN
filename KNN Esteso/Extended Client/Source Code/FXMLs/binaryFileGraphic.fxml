@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" styleClass="bodybg" stylesheets="@../CSSs/background.css" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.graphicController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DEEPSKYBLUE" height="200.0" layoutX="159.0" layoutY="562.0" rotate="18.4" stroke="TRANSPARENT" strokeType="INSIDE" width="286.0" AnchorPane.bottomAnchor="-162.0" />
+      <AnchorPane prefHeight="600.0" prefWidth="219.0" style="-fx-background-color: linear-gradient(to bottom, #00bfff, #0070ff);" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <effect>
+            <DropShadow height="0.0" radius="11.7675" width="49.07" />
+         </effect>
+         <children>
+            <Button fx:id="homeButton" mnemonicParsing="false" onAction="#clickedHomeButton" prefHeight="70.0" prefWidth="219.0" stylesheets="@../CSSs/button.css" textFill="WHITE">
+               <font>
+                  <Font name="Montserrat Bold" size="18.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/home.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="infoButton" layoutY="530.0" mnemonicParsing="false" onAction="#clickedInfoButton" prefHeight="70.0" prefWidth="219.0" stylesheets="@../CSSs/button.css" textFill="WHITE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0">
+               <font>
+                  <Font name="Montserrat Bold" size="17.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="30.0" fitWidth="30.0">
+                     <image>
+                        <Image url="@../images/info.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <VBox alignment="CENTER" layoutY="186.0" prefHeight="229.0" prefWidth="219.0" AnchorPane.bottomAnchor="185.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="186.0">
+               <children>
+                  <Button fx:id="textFileButton" mnemonicParsing="false" onAction="#clickedTextFileButton" prefHeight="70.0" prefWidth="219.0" stylesheets="@../CSSs/button.css" text="File di testo" textFill="WHITE">
+                     <font>
+                        <Font name="Montserrat Bold" size="18.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="binaryFileButton" mnemonicParsing="false" onAction="#clickedBinaryFileButton" prefHeight="70.0" prefWidth="219.0" style="-fx-background-color: #00bfff;" stylesheets="@../CSSs/button.css" text="File binario" textFill="WHITE">
+                     <font>
+                        <Font name="Montserrat Bold" size="18.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="databaseButton" mnemonicParsing="false" onAction="#clickedDatabaseButton" prefHeight="70.0" prefWidth="219.0" stylesheets="@../CSSs/button.css" text="Database MySQL" textFill="WHITE">
+                     <font>
+                        <Font name="Montserrat Bold" size="17.0" />
+                     </font>
+                  </Button>
+               </children>
+            </VBox>
+         </children>
+      </AnchorPane>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="187.0" layoutX="390.0" layoutY="539.0" rotate="-13.6" stroke="TRANSPARENT" strokeType="INSIDE" width="542.0" AnchorPane.bottomAnchor="-126.0" AnchorPane.rightAnchor="-32.0">
+         <effect>
+            <DropShadow height="42.06" radius="20.53" width="42.06" />
+         </effect>
+      </Rectangle>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DEEPSKYBLUE" height="486.0" layoutX="867.0" layoutY="166.0" rotate="8.1" stroke="TRANSPARENT" strokeType="INSIDE" width="200.0" AnchorPane.bottomAnchor="-52.0" AnchorPane.rightAnchor="-167.0">
+         <effect>
+            <DropShadow height="60.77" radius="26.375" spread="0.06" width="46.73" />
+         </effect>
+      </Rectangle>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="302.0" layoutY="90.0" prefHeight="75.0" prefWidth="523.0" text="nell'applicazione KNN" textAlignment="CENTER" textFill="WHITE" AnchorPane.leftAnchor="302.0" AnchorPane.rightAnchor="75.0" AnchorPane.topAnchor="90.0">
+         <font>
+            <Font name="Montserrat SemiBold" size="45.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Label>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="302.0" layoutY="14.0" prefHeight="94.0" prefWidth="374.0" text="Benvenuto" textAlignment="CENTER" textFill="WHITE" AnchorPane.leftAnchor="302.0" AnchorPane.rightAnchor="75.0" AnchorPane.topAnchor="14.0">
+         <font>
+            <Font name="Montserrat SemiBold" size="61.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Label>
+      <BorderPane layoutX="293.0" layoutY="234.0" prefHeight="136.0" prefWidth="543.0" AnchorPane.bottomAnchor="230.0" AnchorPane.leftAnchor="293.0" AnchorPane.rightAnchor="63.799999999999955" AnchorPane.topAnchor="234.0">
+         <top>
+            <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="12.0" prefWidth="486.0" text="Scrivere il nome del file binario:" textAlignment="CENTER" textFill="WHITE" BorderPane.alignment="CENTER">
+               <font>
+                  <Font name="Montserrat Medium" size="27.0" />
+               </font>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Label>
+         </top>
+         <center>
+            <TextField fx:id="binaryFileField" onAction="#enterBinaryFileField" prefHeight="34.0" prefWidth="543.0" promptText="Scrivere qui, il nome del file binario..." BorderPane.alignment="CENTER">
+               <effect>
+                  <DropShadow />
+               </effect></TextField>
+         </center>
+         <bottom>
+            <Button fx:id="sumbitBinaryFileButton" mnemonicParsing="false" onAction="#clickedSumbitBinaryFileButton" prefHeight="23.0" prefWidth="80.0" stylesheets="@../CSSs/ALTbutton.css" text="Inoltra" textFill="WHITE" BorderPane.alignment="CENTER">
+               <font>
+                  <Font name="Montserrat SemiBold" size="12.0" />
+               </font>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Button>
+         </bottom>
+      </BorderPane>
+   </children>
+</AnchorPane>
