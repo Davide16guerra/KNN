@@ -1,0 +1,1 @@
+typeSearchIndex = [{"l":"All Classes","u":"allclasses-index.html"},{"p":"service","l":"DATABASE_TYPE"},{"p":"controllers","l":"graphicController"},{"p":"controllers","l":"KNNGraphicController"},{"p":"application","l":"Main"}];updateSearchResults();
