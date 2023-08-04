@@ -1,0 +1,22 @@
+@schema 3
+@desc Lavoro discrete
+@desc Eta continuous
+@desc Stipendio continuous
+@target class
+@data 16
+Spazzino,60,12000,2500
+Dentista,50,34000,50000
+Insegnante,47,25000,20000
+Pompiere,34,19000,15000
+Elettricista,58,20000,14000
+Meccanico,67,17000,7000
+Insegnante,33,25000,20000
+Elettrcista,50,20000,18000
+Camerire,18,6000,1500
+Spazzino,24,11000,4000
+Insegnante,28,24000,30000
+Pompiere,41,20000,13000
+Poliziotto,20,23000,15000
+Poliziotto,60,34000,5000
+Poliziotto,22,23000,14500
+Poliziotto,70,34000,5000
